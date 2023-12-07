@@ -1,0 +1,54 @@
+.navigation-bar > li {
+	list-style: none;
+}
+
+.navigation-bar {
+	display: flex;
+	gap: 1rem;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 20%;
+}
+
+/* .about-me {
+	display: flex;
+	gap: 1rem;
+} */
+
+body {
+	background-image: url(./assets/images/parchment.jpg);
+	background-repeat: no-repeat;
+	/* background-size: auto; */
+	background-size: cover;
+}
+
+h1 {
+	text-align: center;
+	font-family: "monotype corsiva", cursive;
+	font-size: 60pt;
+	margin-bottom: 10px;
+}
+
+h2 {
+	font-family: "monotype corsiva", cursive;
+}
+
+img {
+	position: relative;
+	left: 42%;
+}
+
+p, .summary > ul {
+	font-family: "monotype corsiva", cursive;
+	font-size: 20pt;
+}
+
+.header > p {
+	text-align: center;
+	font-family: "monotype corsiva", cursive;
+	font-size: 20pt;
+}
+
+.highlight {
+	color:crimson
+}
