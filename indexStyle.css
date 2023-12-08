@@ -1,24 +1,20 @@
-.navigation-bar > li {
+#navigation-bar > li {
 	list-style: none;
 }
 
-.navigation-bar {
+#navigation-bar {
 	display: flex;
 	gap: 1rem;
 	margin-top: 30px;
-	margin-bottom: 30px;
-	margin-left: 20%;
+	flex-wrap: wrap; /* When the screen size shrinks, the items are wraped down to fit */
+	justify-content: center; /* centers the navigation-bar */
+	background-color: rgb(162, 153, 130);
+	padding: 20px;
 }
-
-/* .about-me {
-	display: flex;
-	gap: 1rem;
-} */
 
 body {
 	background-image: url(./assets/images/parchment.jpg);
 	background-repeat: no-repeat;
-	/* background-size: auto; */
 	background-size: cover;
 }
 
@@ -36,19 +32,32 @@ h2 {
 img {
 	position: relative;
 	left: 42%;
+	border: 5px solid black;
 }
 
-p, .summary > ul {
+p, #summary > ul, #work-experience li, #education li {
 	font-family: "monotype corsiva", cursive;
 	font-size: 20pt;
 }
 
-.header > p {
+#header > p {
 	text-align: center;
 	font-family: "monotype corsiva", cursive;
 	font-size: 20pt;
 }
 
 .highlight {
-	color:crimson
+	color: blue
+}
+
+#work-experience>ul p, #education>ul p {
+	margin: 0;
+}
+
+.title-header{
+	font-size: 40pt;
+}
+
+#work-experience p, #education p {
+	font-size: 14pt;
 }
