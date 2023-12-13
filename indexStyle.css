@@ -63,6 +63,10 @@ p, #summary > ul, #work-experience li, #education li, .skills-item {
 	border: 5px solid black;
 }
 
+#summary > ul > li{
+	margin-bottom: 10px;
+}
+
 footer{
 	padding-top: 30px;
 	padding-left: 40px;
@@ -199,4 +203,58 @@ footer{
 	border: solid black;
 	background-color: rgb(184, 144, 84);
 	padding-bottom: 10px;
+}
+
+@media (max-width: 700px){
+	#certificates{
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.skills-container{
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.hobby-container{
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	img{
+		left: 37%;
+	}
+}
+
+@media (max-width: 470px){
+	#certificates{
+		/* display: grid; */
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.skills-container{
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.hobby-container{
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	/* h1{
+		font-size: 40pt;
+	}
+
+	h2{
+		font-size: 20pt;
+	}
+
+	p{
+		font-size: 10pt;
+	}
+
+	li {
+		font-size: 10pt;
+	} */
+
+	img{
+		height: 150px;
+		left: 30%;
+	}
 }
