@@ -4,10 +4,21 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>My Hobbies</title>
-	<link rel="stylesheet" href="../indexStyle.css">
+	<link rel="stylesheet" href="./indexStyle.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script>
+		$(function(){
+			$('.header-file').load('./header.html');
+		});
+		$(function(){
+			$('.footer-file').load('./footer.html');
+		});
+	</script>
 
 </head>
 <body>
+	<div class="header-file"></div>
+
 	<h1 class="title-header">My Hobbies</h1>
 	<div class="hobby-intro" style="text-align: center;">
 		<p>
@@ -92,19 +103,7 @@
 			</p>
 		</div>
 	</div>
-	
-	
-	
 
-
-
-	<!-- <ul>
-		<li><a href="./aboutMe/games.html">Play Games</a></li>
-		<li><a href="./aboutMe/read.html">Read</a></li>
-		<li><a href="./aboutMe/movies.html">Movies and Series</a></li>
-		<li><a href="./aboutMe/paint.html">Paint Miniatures</a></li>
-		<li><a href="./aboutMe/swordsDaggers.html">Swords and daggers</a></li>
-		<li><a href="./aboutMe/nature.html">Out in the nature</a></li>
-	</ul> -->
+	<div class="footer-file"></div>
 </body>
 </html>

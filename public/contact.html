@@ -4,9 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Contact Me</title>
-	<link rel="stylesheet" href="../indexStyle.css">
+	<link rel="stylesheet" href="./indexStyle.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script>
+		$(function(){
+			$('.header-file').load('./header.html');
+		});
+		$(function(){
+			$('.footer-file').load('./footer.html');
+		});
+	</script>
 </head>
 <body>
+	<div class="header-file"></div>
+
 	<div class="contact">
 		<H1 class="title-header">My Contact details</H1>
 		<div>
@@ -15,5 +26,6 @@
 		</div>
 	</div>
 	
+	<div class="footer-file"></div>
 </body>
 </html>

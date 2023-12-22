@@ -4,9 +4,19 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Skills and programs</title>
-	<link rel="stylesheet" href="../indexStyle.css">
+	<link rel="stylesheet" href="./indexStyle.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script>
+		$(function(){
+			$('.header-file').load('./header.html');
+		});
+		$(function(){
+			$('.footer-file').load('./footer.html');
+		});
+	</script>
 </head>
 <body>
+	<div class="header-file"></div>
 
 	<!-- I have the rankings: Beginner, Junior, intermediate and Senior -->
 	<!-- &starf; &star; -->
@@ -34,6 +44,8 @@
 				<li><b>HTML:</b> Beginner</li>
 				<li><b>CSS:</b> Beginner</li>
 				<li><b>Bootstrap:</b> Beginner</li>
+				<li><b>node.js:</b> Beginner</li>
+				<li><b>express.js:</b> Beginner</li>
 			</ul>
 		</div>
 		
@@ -67,6 +79,6 @@
 	</div>
 	
 	
-	
+	<div class="footer-file"></div>
 </body>
 </html>

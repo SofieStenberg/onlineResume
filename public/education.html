@@ -4,9 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>My Education</title>
-	<link rel="stylesheet" href="../indexStyle.css">
+	<link rel="stylesheet" href="./indexStyle.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script>
+		$(function(){
+			$('.header-file').load('./header.html');
+		});
+		$(function(){
+			$('.footer-file').load('./footer.html');
+		});
+	</script>
 </head>
 <body>
+	<div class="header-file"></div>
+
 	<h1 class="title-header">My Education</h1>
 	<div id="education">
 		<ul>
@@ -25,6 +36,6 @@
 
 	</div>
 	
-	
+	<div class="footer-file"></div>
 </body>
 </html>
